@@ -42,9 +42,12 @@ if __name__ == "__main__":
     # Print the dictionary
     print(config_vars)
 
-    custom_packet = Packet(dest_address=int(config_vars['DESTINATION_ADDRESS'],16), src_address=int(config_vars['SOURCE_ADDRESS'],16),ethernet_type=int(config_vars['ETHER_TYPE'],16))
+    custom_packet = Packet(dest_address=config_vars['DESTINATION_ADDRESS'], src_address=config_vars['SOURCE_ADDRESS'],ethernet_type=config_vars['ETHER_TYPE'])
     print(custom_packet)
 
 
+    # Convert bytearray to hexadecimal representation
+    hex_representation = ''.join('{:02x}'.format(byte) for byte in custom_packet.src_address)
 
+    print(hex_representation)
 
