@@ -1,6 +1,6 @@
 STREAM_DURATION_MS = 1                      // Sreaming duration of ethernet packets (Total duration of generation)
 BURST_SIZE = 3                              // Number of ethernet packets in one burst
-BURST_PERIODICITY_US = 100                  // The periodicity of the burst in micro seconds
+BURST_PERIODICITY_US = 150                  // The periodicity of the burst in micro seconds
 IFGs_NUMBER = 30                            // Standard IFGs to be inserted after CRC, in bytes
 SOURCE_ADDRESS = 0x102030405060             // Source address in hex format
 DESTINATION_ADDRESS = 0x102030302010        // Source address in hex format
